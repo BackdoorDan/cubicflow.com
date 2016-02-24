@@ -121,14 +121,14 @@
 
          &.active {
            a {
-             border-left: 5px solid $cf-orange;
+             border-left: 5px solid $cf-blue;
              color: $cf-grey-medium;
            }
          }
 
          &:hover {
            a {
-             border-left: 5px solid $cf-blue;
+             padding-left: 35px;
            }
          }
        }
