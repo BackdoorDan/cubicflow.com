@@ -5,14 +5,52 @@ title: Retainers
 description: Cubicflow retainers breakdown
 ---
 
-# Retainers
+# Cubicflow Retainers Breakdown
 
-The government asked a court to order Apple to create a unique version of iOS that would bypass security protections on the iPhone Lock screen. It would also add a completely new capability so that passcode tries could be entered electronically.
+## Why are retainers important?
 
-This has two important and dangerous implications:
+The web is a perpetually evolving platform. New devices, operating systems, and technologies get released on what seems like a daily basis. While it's certainly important to not let your investment stagnate or become incompatible as time marches on, it's equally important to take advantage of the opportunity to continuously enrich the user experience. We do these things to support, track, and grow your web presence.
 
-First, the government would have us write an entirely new operating system for their use. They are asking Apple to remove security features and add a new ability to the operating system to attack iPhone encryption, allowing a passcode to be input electronically. This would make it easier to unlock an iPhone by “brute force,” trying thousands or millions of combinations with the speed of a modern computer.
+### Analyze
+Websites made by Cubicflow use Google Analytics, the industry-standard for web traffic analysis. Our retainers include consulting meetings to examine the data gathered, where we draw conclusions on how to use this data effectively to improve your web presence.
 
-We built strong security into the iPhone because people carry so much personal information on our phones today, and there are new data breaches every week affecting individuals, companies and governments. The passcode lock and requirement for manual entry of the passcode are at the heart of the safeguards we have built in to iOS. It would be wrong to intentionally weaken our products with a government-ordered backdoor. If we lose control of our data, we put both our privacy and our safety at risk.
+### Modify
+We incorporate a bit of time each month to make incremental changes and requested edits, while also evaluating potential upgrades.
 
-Second, the order would set a legal precedent that would expand the powers of the government and we simply don’t know where that would lead us. Should the government be allowed to order us to create other capabilities for surveillance purposes, such as recording conversations or location tracking? This would set a very dangerous precedent.
+### Scale
+Your business expands, and you need to grow your project or kick off a new one. We consult on the possibilities and provide priority scheduling for starting a production sprint.
+
+---
+
+## Basic Plan
+
+For small-scale sites built with Cubicflow Boilerplate and without a significant eCommerce or backend element.
+
+* Technical support via email, chat, and VoIP
+* 2 hrs/mo for making minor updates and edits
+* Bi-monthly consulting meeting to discuss analytics, market trends, emerging technologies, and possible site improvements
+* Project point-person
+* Can start a production sprint at next available opportunity
+* Cubicflow Content Management System
+* **$300/mo**
+
+## Standard Plan
+
+For medium-scale sites that may include a significant eCommerce or backend element, or largely non-Cubicflow code.
+
+* Technical support via email, chat, and VoIP
+* 2 hrs/mo for making minor updates and edits
+* Monthly consulting meeting to discuss analytics, market trends, emerging technologies, and possible site improvements
+* Project point-person
+* Can start a production sprint at next available opportunity
+* Cubicflow Content Management System
+
+## Custom Plan
+
+A flexible plan for web applications and large-scale sites.
+
+* Flexible support options
+* Flexible included production hours
+* Flexible meetings
+* Special arrangements for starting new production sprints
+* Cubicflow Content Management System
