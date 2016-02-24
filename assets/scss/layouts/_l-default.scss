@@ -2,3 +2,14 @@
 // Layout default
 // --------------------------------------------------
 
+// gets applied to body of page
+.whitepage {
+
+  main {
+
+    @include container-xsmall();
+    color: $cf-grey-medium;
+
+  }
+
+}

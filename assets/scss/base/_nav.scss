@@ -144,7 +144,7 @@
      left: 0px;
      top: 0px;
      opacity: 0;
-     z-index: 0;
+     z-index: -1;
      transition: opacity 0.3s;
 
 
@@ -167,15 +167,6 @@
 
    &:hover &__line {
       background-color: $cf-orange;
-
-      &--top {
-         transform: rotate(45deg);
-         top: 21px;
-      }
-      &--bottom {
-         transform: rotate(-45deg);
-         top: 21px;
-      }
    }
 
    &.active &__line {
