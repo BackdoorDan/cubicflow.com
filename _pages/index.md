@@ -24,6 +24,12 @@ snapshots:
   - thumbnail_path: assets/img/portfolio/more/avectous-mark.jpg
     fullsize_path: assets/img/portfolio/more/fullsize/avectous-mark.jpg
     name: Avectous Mark
+  - thumbnail_path: assets/img/portfolio/more/avectous-mark.jpg
+    fullsize_path: assets/img/portfolio/more/fullsize/avectous-mark.jpg
+    name: Avectous Mark
+  - thumbnail_path: assets/img/portfolio/more/avectous-mark.jpg
+    fullsize_path: assets/img/portfolio/more/fullsize/avectous-mark.jpg
+    name: Avectous Mark
 ---
 
 <main>
@@ -36,24 +42,23 @@ snapshots:
    </header>
    
    {% if page.featured_case_study.image_path %}
-   <div class="featured-case-study">
-   
-      <div class="featured-case-study__image cf-responsive" style="background-image: url({{page.featured_case_study.image_path}})">
-      </div>
+     <div class="featured-case-study">
 
-      <div class="case-study__label">{{ page.featured_case_study.label}}</div>
-   </div>
+        <div class="featured-case-study__image cf-responsive" style="background-image: url({{page.featured_case_study.image_path}})">
+        </div>
+
+        <div class="case-study__label">{{ page.featured_case_study.label}}</div>
+     </div>
    {% endif %}
    
+   
    <div class="case-study-grid">
-   {% for item in page.case_studies %}
-      <a href="{{item.case_study_link}}" class="case-study cf-responsive" style="background-image: url({{item.image_path}})">
-         <div class="case-study__label">{{ item.label}}</div>
-      </a>
-   {% endfor %}
+     {% for item in page.case_studies %}
+        <a href="{{item.case_study_link}}" class="case-study cf-responsive" style="background-image: url({{item.image_path}})">
+           <div class="case-study__label">{{ item.label}}</div>
+        </a>
+     {% endfor %}
    </div>
-   
-   
    
    
    
@@ -65,11 +70,11 @@ snapshots:
    </header>
    
    <div class="shapshots-grid">
-   {% for item in page.snapshots %}
-      <a class="shapshots-grid__snapshot">
-         <img src="{{item.thumbnail_path}}">
-      </a>
-   {% endfor %}
+     {% for item in page.snapshots %}
+        <a class="shapshots-grid__snapshot">
+           <img src="{{item.thumbnail_path}}">
+        </a>
+     {% endfor %}
    </div>
 
 </main>
