@@ -1,0 +1,43 @@
+.footer {
+
+  @include container-small();
+
+  &__row {
+    @include grid-row();
+  }
+
+  &__col {
+    @include grid-column(12);
+
+    @include breakpoint(medium){
+      @include grid-column(4);
+    }
+    @include breakpoint(large){
+      @include grid-column(3);
+    }
+
+    &--right {
+      @include hide-for-only(medium);
+    }
+
+    &--left {
+
+    }
+  }
+
+  span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: $cf-grey-light;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100px;
+    opacity: 0.25;
+    float: right;
+    margin-top: 30px;
+  }
+
+}

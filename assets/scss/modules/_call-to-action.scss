@@ -1,0 +1,61 @@
+.call-to-action {
+  background-color: $cf-grey-xxlight;
+  height: 240px;
+  width: 100%;
+  position: relative;
+  display: block;
+  color: $cf-grey-dark;
+  transition: all 0.3s;
+  overflow: hidden;
+
+  &:hover {
+    background-color: $white;
+    color: $cf-grey-dark;
+  }
+
+  &__row {
+    @include grid-row();
+  }
+
+  &__col {
+    @include grid-column(12);
+    text-align: center;
+
+    @include breakpoint(medium){
+      @include grid-column(6);
+    }
+
+    &--left {
+
+      line-height: 130px;
+
+      img {
+        width: 70%;
+        max-width: 320px;
+        margin-top: 45px;
+      }
+
+      @include breakpoint(medium){
+        line-height: 240px;
+
+        img {
+          margin-top: 0px;
+        }
+      }
+
+    }
+
+    &--right {
+      h2 {
+        line-height: 100px;
+      }
+      @include breakpoint(medium){
+        h2 {
+          line-height: 240px;
+        }
+      }
+    }
+
+  }
+
+}
