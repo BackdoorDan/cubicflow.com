@@ -32,7 +32,7 @@ For small-scale sites built with Cubicflow Boilerplate and without a significant
 * Project point-person
 * Can start a production sprint at next available opportunity
 * Cubicflow Content Management System
-* **$300/mo**
+* **$249/mo**
 
 ## Standard Plan
 
@@ -44,6 +44,7 @@ For medium-scale sites that may include a significant eCommerce or backend eleme
 * Project point-person
 * Can start a production sprint at next available opportunity
 * Cubicflow Content Management System
+* **$499/mo**
 
 ## Custom Plan
 
@@ -54,3 +55,4 @@ A flexible plan for web applications and large-scale sites.
 * Flexible meetings
 * Special arrangements for starting new production sprints
 * Cubicflow Content Management System
+* **Flexible Pricing**
