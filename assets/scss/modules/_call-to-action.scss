@@ -10,16 +10,24 @@
   &__container {
     @include container-small();
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     display: inline-block;
     border-top: 1px solid $cf-grey-dark;
 
     a {
-      color: $cf-grey-xlight;
       transition: all 0.2s;
 
+      h2 {
+        color: $cf-grey-light;
+        margin-top: 40px;
+        display: inline-block;
+      }
+
       &:hover {
-        color: $cf-orange;
+        h2 {
+          color: $cf-blue;
+        }
+
       }
     }
 
@@ -28,11 +36,6 @@
   img {
     width: 252px;
     height: 44px;
-  }
-
-  h2 {
-    margin-top: 40px;
-    display: inline-block;
   }
 
 }

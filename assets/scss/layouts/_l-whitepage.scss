@@ -1,9 +1,8 @@
-// --------------------------------------------------
-// Layout default
-// --------------------------------------------------
-
 // gets applied to body of page
 .whitepage {
+
+  background-color: $cf-grey-xxlight;
+  overflow: auto;
 
   main {
 
@@ -11,79 +10,12 @@
     color: $cf-grey-medium;
     margin-top: 20px;
     padding-bottom: 100px;
-
-    h1, h2, h3, h4, h5, h6 {
-      line-height: 120%;
-      padding-bottom: 0.4em;
-      padding-top: 1.4em;
-      color: $cf-grey-dark;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      padding: 0px;
-
-      @include breakpoint(medium) {
-        font-size: 40px;
-      }
-      @include breakpoint(large) {
-        font-size: 48px;
-      }
-
-    }
-    h2 {
-
-      font-size: 28px;
-
-      @include breakpoint(medium) {
-        font-size: 32px;
-      }
-      @include breakpoint(large) {
-        font-size: 36px;
-      }
-
-    }
-    h1 + h2 {
-      padding-top: 0em;
-    }
-
-    h3 {
-
-      font-size: 20px;
-
-      @include breakpoint(medium) {
-        font-size: 24px;
-      }
-      @include breakpoint(large) {
-        font-size: 28px;
-      }
-
-    }
-
-    hr {
-      margin-top: 4.5em;
-    }
-
-
-    ul {
-      width: 70%;
-      font-size: 90%;
-      display: block;
-      margin-top: 30px;
-      margin-left: 35px;
-
-      li{
-        margin-top: 1.25em;
-        list-style-type: circle;
-      }
-      strong {
-        font-weight: normal;
-        color: $cf-grey-dark;
-        font-family: $font-family--bold;
-      }
-    }
+    overflow: auto;
 
   }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $cf-grey-dark;
+  }
+
 }

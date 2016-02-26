@@ -44,7 +44,7 @@
 // 1. Global
 // ---------
 
- $global-font-size: 100%;
+ $global-font-size: 16px;
 // $global-width: rem-calc(1200);
 // $global-lineheight: 1.5;
 // $primary-color: #2199e8;
@@ -99,24 +99,24 @@
 // $header-font-weight: $global-weight-normal;
 // $header-font-style: normal;
 // $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
- $header-sizes: (
-   small: (
-     'h1': 24,
-     'h2': 20,
-     'h3': 20,
-     'h4': 18,
-     'h5': 17,
-     'h6': 16,
-   ),
-   medium: (
-     'h1': 36,
-     'h2': 30,
-     'h3': 22,
-     'h4': 25,
-     'h5': 20,
-     'h6': 16,
-   ),
- );
+ // $header-sizes: (
+ //   small: (
+ //     'h1': 24,
+ //     'h2': 20,
+ //     'h3': 20,
+ //     'h4': 18,
+ //     'h5': 17,
+ //     'h6': 16,
+ //   ),
+ //   medium: (
+ //     'h1': 36,
+ //     'h2': 30,
+ //     'h3': 22,
+ //     'h4': 25,
+ //     'h5': 20,
+ //     'h6': 16,
+ //   ),
+ // );
 // $header-color: inherit;
 // $header-lineheight: 1.4;
 // $header-margin-bottom: 0.5rem;
@@ -132,8 +132,8 @@
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
-// $anchor-color: $primary-color;
-// $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $cf-orange;
+$anchor-color-hover: $cf-blue;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $hr-width: $global-width;

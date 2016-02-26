@@ -35,8 +35,10 @@
   }
 
   h3 {
+    color: $cf-grey-xxlight;
     margin-top: 60px;
     margin-bottom: 14px;
+    font-size: 22px;
   }
 
   span {
@@ -54,7 +56,7 @@
     margin: 87px auto 50px auto;
     @include breakpoint(medium){
       float: right;
-      margin: 87px auto 0px auto;
+      margin-top: 125px;
     }
   }
 
