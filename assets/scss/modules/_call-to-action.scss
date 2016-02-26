@@ -1,61 +1,38 @@
 .call-to-action {
-  background-color: $near-white;
-  height: 240px;
+  background-color: $near-black;
   width: 100%;
   position: relative;
-  display: block;
   color: $cf-grey-dark;
   transition: all 0.3s;
-  overflow: hidden;
+  overflow: auto;
+  text-align: center;
 
-  &:hover {
-    background-color: $white;
-    color: $cf-grey-dark;
+  &__container {
+    @include container-small();
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: inline-block;
+    border-top: 1px solid $cf-grey-dark;
+
+    a {
+      color: $cf-grey-xlight;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $cf-orange;
+      }
+    }
+
   }
 
-  &__row {
-    @include grid-row();
+  img {
+    width: 252px;
+    height: 44px;
   }
 
-  &__col {
-    @include grid-column(12);
-    text-align: center;
-
-    @include breakpoint(medium){
-      @include grid-column(6);
-    }
-
-    &--left {
-
-      line-height: 130px;
-
-      img {
-        width: 70%;
-        max-width: 320px;
-        margin-top: 45px;
-      }
-
-      @include breakpoint(medium){
-        line-height: 240px;
-
-        img {
-          margin-top: 0px;
-        }
-      }
-
-    }
-
-    &--right {
-      h2 {
-        line-height: 100px;
-      }
-      @include breakpoint(medium){
-        h2 {
-          line-height: 240px;
-        }
-      }
-    }
-
+  h2 {
+    margin-top: 40px;
+    display: inline-block;
   }
 
 }

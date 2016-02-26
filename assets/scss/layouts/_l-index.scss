@@ -79,9 +79,20 @@ main {
 
     }
 
+    &__overflow {
+      overflow: hidden;
+    }
+
     img {
-      width: auto;
+      width: 100%;
       height: auto;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 

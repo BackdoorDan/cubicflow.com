@@ -71,6 +71,7 @@ var PATHS = {
 
     // Site's JavaScript
     'assets/js/cf-assets.js',
+    'assets/js/cf-modal.js',
     'assets/js/app.js'
   ],
   assets: [

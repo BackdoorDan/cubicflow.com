@@ -16,10 +16,14 @@
     @include breakpoint(medium){
       @include grid-column(4);
       text-align: left;
+      &:nth-child(3){
+        @include grid-column-position(1);
+      }
     }
     @include breakpoint(large){
       @include grid-column(3);
     }
+
 
     &--right {
       @include hide-for-only(medium);
@@ -33,9 +37,6 @@
   h3 {
     margin-top: 60px;
     margin-bottom: 14px;
-    @include breakpoint(medium){
-      margin-left: 20%;
-    }
   }
 
   span {
@@ -43,9 +44,6 @@
     margin-bottom: 12px;
     font-size: 14px;
     color: $cf-grey-light;
-    @include breakpoint(medium){
-      margin-left: 20%;
-    }
   }
 
   img {
@@ -55,7 +53,7 @@
     display: block;
     margin: 87px auto 50px auto;
     @include breakpoint(medium){
-
+      float: right;
       margin: 87px auto 0px auto;
     }
   }

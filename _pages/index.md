@@ -41,6 +41,19 @@ snapshots:
     name: Avectous Mark
 ---
 
+<div class="modal" id="cf-gallery-modal">
+
+  <img id="cf-gallery-modal-img">
+
+  <div class="modal__preloader">
+  </div>
+
+</div>
+
+
+
+
+
 <header class="header header--dark">
   <h1>Design. Web. Brand. UI/X.</h1>
   <span class="subheading">
@@ -62,9 +75,9 @@ snapshots:
 <div class="case-study-grid">
   {% for item in page.case_studies %}
   <a href="{{item.case_study_link}}" class="case-study">
-    
+
     <img class="case-study__image" src="{{item.image_path}}">
-    
+
     <div class="case-study__label">{{ item.label}}</div>
   </a>
   {% endfor %}
@@ -81,8 +94,10 @@ snapshots:
 
 <div class="shapshots-grid">
   {% for item in page.snapshots %}
-  <a class="shapshots-grid__snapshot">
-    <img src="{{item.thumbnail_path}}">
+  <a data-fullsize="{{item.fullsize_path}}" class="shapshots-grid__snapshot">
+    <div class="shapshots-grid__snapshot__overflow">
+      <img src="{{item.thumbnail_path}}">
+    </div>
   </a>
   {% endfor %}
 </div>

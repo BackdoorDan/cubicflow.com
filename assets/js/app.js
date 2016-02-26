@@ -15,6 +15,8 @@ $(document).foundation();
 
 cf.assets.init();
 
+cf.modalGallery('.shapshots-grid__snapshot');
+
 
 //
 var $expandBtn = $('.nav-toggle-btn');
