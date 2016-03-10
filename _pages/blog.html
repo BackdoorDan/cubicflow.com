@@ -6,25 +6,25 @@ description: Contact us at Cubicflow
 ---
 
 {% for post in site.posts %}
-  <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+<div class="post">
+
+  <a href="{{ post.url }}"><h1 class="nopad">{{ post.title }}</h1></a>
+
+  <span class="post__date">{{ post.date | date: '%B %d, %Y' }}</span>
+
   {{ post.excerpt }}
 
-  <div class="meta">
+  <div class="post__meta">
 
-    {% for tag in post.tags %}
-      <span class="tag">{{tag}}</span>
-    {% endfor %}
-
-    {% if post.author %}
-    <div class="author">
-      <span class="author__avatar"></span>
-      <span class="author__name">{{ post.author }}</span>
-      <span class="author__date">{{ post.date | date: '%B %d, %Y' }}</span>
+    <div class="post__tags">
+      {% for tag in post.tags %}
+        <span class="post__tags__tag">{{tag}}</span>
+      {% endfor %}
     </div>
-    {% endif %}
+
 
   </div>
 
-{% endfor %}
-
 </div>
+
+{% endfor %}

@@ -1,0 +1,60 @@
+
+.casestudy {
+
+  .container {
+    @include container;
+  }
+
+  .container-small {
+    @include container-small;
+  }
+
+  .container-xsmall {
+    @include container-xsmall;
+  }
+
+  .container-large {
+    @include container-large;
+  }
+
+  .bg-xdark {
+    background-color: $cf-grey-xdark;
+  }
+
+  .bg-medium {
+    background-color: $cf-grey-medium;
+  }
+
+  .bg-xlight {
+    background-color: $cf-grey-xlight;
+  }
+
+  .text-xdark {
+    color: $cf-grey-xdark;
+  }
+
+  .text-xlight {
+    color: $cf-grey-xlight;
+  }
+
+
+}
+
+.casestudy-header {
+
+  width: 100%;
+  overflow: auto;
+  min-height: 400px;
+  text-align: center;
+
+  &__logo {
+    display: block;
+    margin: 0px auto 50px auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  &__tagline {
+    font-size: 18px;
+  }
+}
