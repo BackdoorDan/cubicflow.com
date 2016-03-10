@@ -1,0 +1,35 @@
+---
+
+---
+
+{% include head.html %}
+
+<body class="whitepage blog post">
+
+{% include header.html %}
+
+<main>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+
+  <div class="meta">
+    {% for tag in page.tags %}
+      <span class="tag">{{tag}}</span>
+    {% endfor %}
+
+    {% if page.author %}
+    <div class="author">
+      <span class="author__avatar"></span>
+      <span class="author__name">{{page.author}}</span>
+      <span class="author__date">{{ page.date | date: '%B %d, %Y' }}</span>
+    </div>
+    {% endif %}
+  </div>
+
+</main>
+
+{% include components/call-to-action.html %}
+
+{% include footer.html %}
+
+{% include foot.html %}

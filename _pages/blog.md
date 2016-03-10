@@ -1,0 +1,28 @@
+---
+permalink: /blogs/
+layout: blog
+title: Blog
+description: Contact us at Cubicflow
+---
+
+{% for post in site.posts %}
+  <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+  {{ post.excerpt }}
+
+  <div class="meta">
+    {% for tag in post.tags %}
+      <span class="tag">{{tag}}</span>
+    {% endfor %}
+
+    {% if post.author %}
+    <div class="author">
+      <span class="author__avatar"></span>
+      <span class="author__name">{{ post.author }}</div>
+      <span class="author__date">{{ post.date | date: '%B %d, %Y' }}</div>
+    </div>
+    {% endif %}
+  </div>
+
+{% endfor %}
+
+</div>
