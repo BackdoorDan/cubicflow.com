@@ -1,6 +1,12 @@
 
 .casestudy {
 
+  background-color: $cf-grey-xlight;
+  color: $cf-grey-medium;
+
+  main {
+  }
+
   .container {
     @include container;
   }
@@ -31,30 +37,112 @@
 
   .text-xdark {
     color: $cf-grey-xdark;
+    hr {
+      background-color: $cf-grey-xdark;
+    }
   }
 
   .text-xlight {
     color: $cf-grey-xlight;
+    hr {
+      background-color: fade-out($cf-grey-xlight, 0.5);
+    }
   }
 
+  &__header {
 
-}
-
-.casestudy-header {
-
-  width: 100%;
-  overflow: auto;
-  min-height: 400px;
-  text-align: center;
-
-  &__logo {
-    display: block;
-    margin: 0px auto 50px auto;
+    padding: 90px 0px 90px 0px;
     width: 100%;
-    max-width: 400px;
+    overflow: auto;
+    text-align: center;
+
+    @include breakpoint(medium){
+      padding: 120px 0px 130px 0px;
+    }
+
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 50px;
+      margin-top: 0px;
+    }
+
+    hr {
+      display: block;
+      margin: 70px auto 20px auto;
+      width: 100px;
+      height: 1px;
+      border: 0px solid #000;
+    }
+
+    &__logo {
+      display: block;
+      margin: 0px auto 0px auto;
+      width: 90%;
+      max-width: 360px;
+      max-height: 200px;
+    }
+
+    &__tagline {
+      font-size: 18px;
+      display: inline-block;
+      max-width: 450px;
+    }
   }
 
-  &__tagline {
-    font-size: 18px;
+
+  &__section {
+    h1,h2,h3,h4,h5,h6 {
+      color: $cf-grey-dark;
+    }
+    padding-bottom: 80px;
   }
+
+
+  &__icons {
+
+    margin: 60px auto 70px auto;
+    @include grid-row();
+    @include grid-column();
+    @include grid-column-position(center);
+
+    &__icon {
+      text-align: center;
+      @include grid-column(6);
+
+      img {
+        display: block;
+        margin: 0px auto 20px auto;
+      }
+    }
+  }
+
+
+  &__image {
+    @include container-small();
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  &__testimonial {
+    padding: 50px 0px 80px 0px;
+    text-align: center;
+
+    &__quote {
+      @extend h3;
+    }
+
+    &__avatar {
+      margin: 34px auto 40px auto;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background-color: $cf-grey-medium;
+    }
+  }
+
 }
