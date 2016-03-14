@@ -12,6 +12,7 @@ google-verification:    ""
 collections:
   casestudies:
     output: true
+    permalink: /:collection/:slug/
 
 include:      [
                 '.htaccess',
