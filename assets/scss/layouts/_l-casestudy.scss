@@ -103,12 +103,16 @@
 
     margin: 60px auto 70px auto;
     @include grid-row();
-    @include grid-column();
-    @include grid-column-position(center);
 
     &__icon {
       text-align: center;
       @include grid-column(6);
+      @include grid-layout(2);
+      //@include grid-layout-center-last();
+      
+      @include breakpoint(medium) {
+        @include grid-column(3);
+      }
 
       img {
         display: block;
