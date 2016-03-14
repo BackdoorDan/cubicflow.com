@@ -1,5 +1,5 @@
 language:               ""
-title:                  "Site Title"
+title:                  "Cubicflow"
 description:            "Site description"
 google-verification:    ""
 
@@ -7,6 +7,12 @@ google-verification:    ""
 # destination: ./_site
 # plugins:     ./_plugins
 # layouts:     ./_layouts
+
+
+collections:
+  casestudies:
+    output: true
+
 include:      [
                 '.htaccess',
                 '_pages'

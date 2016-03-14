@@ -101,17 +101,24 @@
 
   &__icons {
 
-    margin: 60px auto 70px auto;
+    margin: 10px auto 0px auto;
     @include grid-row();
+    
 
     &__icon {
+      margin-top: 50px;
       text-align: center;
-      @include grid-column(6);
-      @include grid-layout(2);
-      //@include grid-layout-center-last();
+      
+      @include breakpoint(small only){
+        @include grid-column(6);
+        @include grid-column-end;
+        @include grid-layout-center-last(2);
+      }
       
       @include breakpoint(medium) {
-        @include grid-column(3);
+        @include grid-column(4);
+        @include grid-column-end;
+        @include grid-layout-center-last(3);
       }
 
       img {
