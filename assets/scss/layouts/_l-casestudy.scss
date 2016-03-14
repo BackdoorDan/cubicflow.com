@@ -103,18 +103,18 @@
 
     margin: 10px auto 0px auto;
     @include grid-row();
-    
+
 
     &__icon {
       margin-top: 50px;
       text-align: center;
-      
+
       @include breakpoint(small only){
         @include grid-column(6);
         @include grid-column-end;
         @include grid-layout-center-last(2);
       }
-      
+
       @include breakpoint(medium) {
         @include grid-column(4);
         @include grid-column-end;
@@ -131,6 +131,19 @@
 
   &__image {
     @include container-small();
+    padding: 0px;
+    margin: 0px;
+
+    &--fullsize {
+      width: 100%;
+      height: auto;
+      max-width: none;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
 
     img {
       width: 100%;

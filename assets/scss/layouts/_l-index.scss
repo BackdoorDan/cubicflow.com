@@ -55,6 +55,8 @@
     height: 250px;
     overflow: hidden;
     position: relative;
+    display: block;
+
     &__image {
       height: 100%;
       background-size: cover;

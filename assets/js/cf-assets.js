@@ -61,9 +61,9 @@ cf.assets = (function () {
     // OPTIONS
     var x2ext = '@2x';
 
-    var largeSuffix = '-large';
+    var largeSuffix = '--large';
 
-    var mediumSuffix = '-med';
+    var mediumSuffix = '--med';
 
     var responsiveClass = '.cf-responsive';
 
