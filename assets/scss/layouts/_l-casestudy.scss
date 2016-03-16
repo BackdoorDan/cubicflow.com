@@ -133,6 +133,12 @@
     @include container-small();
     padding: 0px;
 
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0px auto;
+    }
+
     &--fullsize {
       width: 100%;
       height: auto;
@@ -142,11 +148,6 @@
         width: 100%;
         height: auto;
       }
-    }
-
-    img {
-      width: 100%;
-      height: auto;
     }
   }
 

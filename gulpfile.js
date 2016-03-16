@@ -29,7 +29,7 @@ var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 var PATHS = {
   pages: [
     '*.{md,html,yml,xml}',
-    '{_data,_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}',
+    '{_data,_includes,_layouts,_pages,_posts,_casestudies}/**/*.{md,html,yml,xml}',
     '!_site/**/*.*',
     '!assets/**/*.*'
   ],
