@@ -14,7 +14,20 @@ $(document).foundation();
 $(document).on('ready', function(){
 
   // Init asset replacement
-  cf.assets.init();
+
+  var options = {
+    responsiveClass: '.cf-responsive',
+    mediumSuffix: '--medium',
+    largeSuffix: '--large',
+    retinaSuffix: '@2x',
+    addMediumSuffix: true,
+    addLargeSuffix: true,
+    addRetinaSuffix: true,
+  };
+  cf.imgSwap(options);
+
+
+
 
   // If snapshots exist init modalGallery
   if (document.querySelectorAll('.shapshots-grid__snapshot').length > 1) {

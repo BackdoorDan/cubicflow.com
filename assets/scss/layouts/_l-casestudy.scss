@@ -55,6 +55,8 @@
     width: 100%;
     overflow: auto;
     text-align: center;
+    background-size: cover;
+    background-position: center;
 
     @include breakpoint(medium){
       padding: 120px 0px 130px 0px;
@@ -138,16 +140,20 @@
       display: block;
       margin: 0px auto;
     }
+  }
 
-    &--fullsize {
-      width: 100%;
-      height: auto;
-      max-width: none;
 
-      img {
-        width: 100%;
-        height: auto;
-      }
+  &__fullsize-image {
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include breakpoint(medium) {
+      height: 640px;
+    }
+    @include breakpoint(large) {
+      height: 900px;
     }
   }
 

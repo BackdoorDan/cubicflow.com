@@ -150,6 +150,9 @@ gulp.task('javascript', function() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
     .pipe($.concat('all.js'))
+    .pipe($.babel({
+      presets: ['es2015']
+    }))
     .pipe($.if(isProduction, $.uglify({ mangle: false })))
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     // for live injecting, for production builds we write the revised version
