@@ -4,6 +4,13 @@ if (!window.cf){
 
 cf.modalGallery = function(selector){
 
+  var opts = {
+    smallBrowserWidth: 600,
+    mediumBrowserWidth: 1025,
+    largeBrowserWidth: 1280
+  };
+
+
   var currentIndex = 0,
       modalWindow,
       modalImg,
@@ -54,7 +61,7 @@ cf.modalGallery = function(selector){
     fullsize = thumbnail.getAttribute('data-fullsize');
     if (!fullsize) return console.log('No data-fullsize attr');
 
-    if(!cf.isMobile() && cf.isRetina()){
+    if(!cf.isMobile(opts) && cf.isRetina(opts)){
         re = /([\w\d_-]*)\.?[^\\\/]*$/i;
         filename = fullsize.match(re)[1];
         ext = fullsize.split('.').pop();

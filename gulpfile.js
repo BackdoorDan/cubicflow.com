@@ -151,7 +151,8 @@ gulp.task('javascript', function() {
     .pipe($.sourcemaps.init())
     .pipe($.concat('all.js'))
     .pipe($.babel({
-      presets: ['es2015']
+      presets: ['es2015'],
+      plugins: ['transform-object-assign']
     }))
     .pipe($.if(isProduction, $.uglify({ mangle: false })))
     .pipe($.if(!isProduction, $.sourcemaps.write()))
@@ -268,7 +269,7 @@ gulp.task('watch', function() {
   gulp.watch('assets/img/**/*', ['jekyll-incremental', browserSync.reload]);
   //no browser reload needed here, browserSync injects the stylesheet into browsers
   gulp.watch('assets/scss/**/*.scss', ['sass']);
-  gulp.watch('assets/js/app.js', ['javascript', browserSync.reload]);
+  gulp.watch(PATHS.javascript, ['javascript', browserSync.reload]);
 });
 
 // --------------------------------------------------

@@ -1,1 +1,234 @@
-"use strict";function _classCallCheck(e,i){if(!(e instanceof i))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function e(e,i){for(var t=0;t<i.length;t++){var r=i[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(i,t,r){return t&&e(i.prototype,t),r&&e(i,r),i}}(),_extends=Object.assign||function(e){for(var i=1;i<arguments.length;i++){var t=arguments[i];for(var r in t)Object.prototype.hasOwnProperty.call(t,r)&&(e[r]=t[r])}return e};if(!cf)var cf={};cf.isRetina=function(e){if(!e)return void console.error("must pass options to detect breakpoint");if(window.matchMedia){var i=window.matchMedia("only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");return i&&i.matches||window.devicePixelRatio>1}return!1},cf.isSmallBrowser=function(e){return e?window.innerWidth<=e.smallBrowserWidth:void console.error("must pass options to detect breakpoint")},cf.isMediumBrowser=function(e){return e?window.innerWidth>e.smallBrowserWidth&&window.innerWidth<=e.mediumBrowserWidth:void console.error("must pass options to detect breakpoint")},cf.isLargeBrowser=function(e){return e?window.innerWidth>=e.mediumBrowserWidth:void console.error("must pass options to detect breakpoint")},cf.imgSwap=function(e){var i={responsiveClass:".cf-responsive",mediumSuffix:"-med",addMediumSuffix:!0,largeSuffix:"-large",addLargeSuffix:!0,addRetinaSuffix:!0,retinaSuffix:"@2x",smallBrowserWidth:600,mediumBrowserWidth:1025,largeBrowserWidth:1280};e=_extends({},i,e);var t=function(){function e(i){var t=this;_classCallCheck(this,e),this.responsiveImages=[],this.opts=i;for(var s=document.querySelectorAll(this.opts.responsiveClass),n=0;n<s.length;n++){var o=new r(s[n]);this.responsiveImages.push(o)}this.swapImgs(this.responsiveImages),window.addEventListener("resize",function(){window.requestAnimationFrame(function(){t.swapImgs(t.responsiveImages)})})}return _createClass(e,[{key:"swapImgs",value:function(){for(var e in this.responsiveImages)this.responsiveImages[e].swapSrc()}},{key:"imageIsAlreadyInArray",value:function(e){var i=this.responsiveImages.filter(function(i,t,r){return i.elem==e});return i.length>0}},{key:"reflow",value:function(){for(var e=document.querySelectorAll(this.opts.responsiveClass),i=0;i<e.length;i++)this.imageIsAlreadyInArray(e[i])===!1&&this.responsiveImages.push(new r(e[i]));return this.swapImgs(),this}}]),e}(),r=function(){function i(e){_classCallCheck(this,i);var t=/([\w\d_-]*)\.?[^\\\/]*$/i,r=/(?:\(['|"]?)(.*?)(?:['|"]?\))/,s=e.currentStyle||window.getComputedStyle(e,!1);this.elem=e,this.type="IMG"===e.nodeName?"img":"div",this.src=e.src||r.exec(s.backgroundImage)[1],this.filename=this.src.match(t)[1],this.extension=this.src.split(".").pop(),this.parentFolder=this.src.substr(0,this.src.lastIndexOf("/")),this.currentSrc=this.src}return _createClass(i,[{key:"swapSrc",value:function(){var e=this.getNewSrc();e!==this.currentSrc&&("img"===this.type?this.elem.src=e:"div"===this.type&&(this.elem.style.backgroundImage="url("+e+")"),this.currentSrc=e)}},{key:"getNewSrc",value:function(){var i="",t=e.addRetinaSuffix?e.retinaSuffix:"",r=e.addMediumSuffix?e.mediumSuffix:"",s=e.addLargeSuffix?e.largeSuffix:"";return cf.isSmallBrowser(e)&&!cf.isRetina(e)?i=this.parentFolder+"/"+this.filename+"."+this.extension:cf.isMediumBrowser(e)&&!cf.isRetina(e)?i=this.parentFolder+"/"+this.filename+r+"."+this.extension:cf.isLargeBrowser(e)&&!cf.isRetina(e)?i=this.parentFolder+"/"+this.filename+s+"."+this.extension:cf.isSmallBrowser(e)&&cf.isRetina(e)?i=this.parentFolder+"/"+this.filename+t+"."+this.extension:cf.isMediumBrowser(e)&&cf.isRetina(e)?i=this.parentFolder+"/"+this.filename+r+t+"."+this.extension:cf.isLargeBrowser(e)&&cf.isRetina(e)&&(i=this.parentFolder+"/"+this.filename+s+t+"."+this.extension),i}}]),i}();return new t(e)},"undefined"!=typeof exports&&"undefined"!=typeof module&&module.exports&&(exports=module.exports=cf);
+if (!cf){
+  var cf = {};
+}
+
+// Helper functions for detecting viewport
+// Each returns a boolean
+cf.isRetina = (opts) => {
+  if(!opts) {
+    console.error('must pass options to detect breakpoint');
+    return undefined
+  }
+  if (window.matchMedia) {
+    var mq = window.matchMedia("only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
+    return (mq && mq.matches || (window.devicePixelRatio > 1));
+  } else {
+    return false;
+  }
+}
+
+cf.isMobile = () => {
+  var mobileDevice = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if(cf.isSmallBrowser || mobileDevice) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+cf.isSmallBrowser = (opts) => {
+  if(!opts) {
+    console.error('must pass options to detect breakpoint');
+    return undefined
+  }
+  return window.innerWidth <= opts.smallBrowserWidth;
+}
+
+cf.isMediumBrowser = (opts) => {
+  if(!opts) {
+    console.error('must pass options to detect breakpoint');
+    return undefined
+  }
+  return window.innerWidth > opts.smallBrowserWidth && window.innerWidth <= opts.mediumBrowserWidth;
+};
+
+cf.isLargeBrowser = (opts) => {
+  if(!opts) {
+    console.error('must pass options to detect breakpoint');
+    return undefined
+  }
+  return window.innerWidth >= opts.mediumBrowserWidth;
+}
+
+
+// Main Method
+cf.imgSwap = (opts) => {
+
+  // Default Options
+  let defaultOpts = {
+    responsiveClass: '.cf-responsive',
+    mediumSuffix: '-med',
+    addMediumSuffix: true,
+    largeSuffix: '-large',
+    addLargeSuffix: true,
+    addRetinaSuffix: true,
+    retinaSuffix: '@2x',
+    smallBrowserWidth: 600,
+    mediumBrowserWidth: 1025,
+    largeBrowserWidth: 1280
+  };
+
+  // Merge default options with passed options. ( Needs es6 object.assign transform plugin )
+  opts = Object.assign({}, defaultOpts, opts);
+
+
+  // Main list class. Holds all the responsive images and provides methods to effect all of them
+  // Constructor takes a options object as param
+  // Gets instantiated and returned at the bottom of the file
+  const ImgList = class {
+
+    constructor (opts){
+
+      this.responsiveImages = [];
+
+      this.opts = opts;
+
+      let images = document.querySelectorAll(this.opts.responsiveClass);
+
+
+      for (let i=0;i<images.length;i++){
+        const image = new ResponsiveImg(images[i])
+        this.responsiveImages.push(image);
+      }
+
+      this.swapImgs(this.responsiveImages);
+
+      window.addEventListener('resize', () => {
+        window.requestAnimationFrame( () => {
+          this.swapImgs(this.responsiveImages);
+        });
+      });
+
+    }
+
+    // Swaps all images.
+    swapImgs (){
+      for(let i in this.responsiveImages){
+        this.responsiveImages[i].swapSrc();
+      }
+    };
+
+    // Checkes to see if the image is new. Takes an image element as a param.
+    imageIsAlreadyInArray (image){
+      let newImage = this.responsiveImages.filter(function(item, index, array){
+        return item.elem == image;
+      });
+
+      return newImage.length > 0;
+    }
+
+
+    // Checks for new images then swap.
+    reflow (){
+
+      let images = document.querySelectorAll(this.opts.responsiveClass);
+
+      for (let i=0;i<images.length;i++){
+        if(this.imageIsAlreadyInArray(images[i]) === false){
+          this.responsiveImages.push(new ResponsiveImg(images[i]));
+        }
+      }
+
+      this.swapImgs();
+
+      return this;
+    }
+
+  };
+
+
+  // Class for each image.
+  // Constructor takes a DOM Node as param
+  const ResponsiveImg = class {
+
+    constructor(img){
+
+      // Regex for getting file name from URL
+      const re = /([\w\d_-]*)\.?[^\\\/]*$/i;
+
+      // Regex for getting file name from CSS bgimage
+      const bgImgRe = /(?:\(['|"]?)(.*?)(?:['|"]?\))/;
+
+      const compStyle = img.currentStyle || window.getComputedStyle(img, false);
+
+      this.elem = img;
+      this.type = (img.nodeName === 'IMG') ? 'img' : 'div';
+      this.src = img.src || bgImgRe.exec(compStyle.backgroundImage)[1];
+      this.filename = this.src.match(re)[1];
+      this.extension = this.src.split('.').pop();
+      this.parentFolder =  this.src.substr(0, this.src.lastIndexOf('/'));
+      this.currentSrc = this.src;
+    }
+
+    // Swap out the img src with new one.
+    swapSrc(){
+
+      const newSrc = this.getNewSrc();
+
+      if(newSrc === this.currentSrc) return;
+
+      if(this.type === 'img'){
+        this.elem.src = newSrc
+      }else if (this.type === 'div'){
+        this.elem.style.backgroundImage = 'url(' + newSrc + ')';
+      }
+      this.currentSrc = newSrc;
+
+    }
+
+    // Returns what the new source for the image should be.
+    getNewSrc(){
+
+      let newSrc = '';
+      let retinaSuffix = (opts.addRetinaSuffix) ? opts.retinaSuffix : '';
+      let mediumSuffix = (opts.addMediumSuffix) ? opts.mediumSuffix : '';
+      let largeSuffix = (opts.addLargeSuffix) ? opts.largeSuffix : '';
+
+      // SMALL AND NOT 2X
+      if (cf.isSmallBrowser(opts) && !cf.isRetina(opts)){
+        newSrc = this.parentFolder + '/' + this.filename + '.' + this.extension;
+      }
+
+      // MEDIUM BROWSERS AND NOT 2X
+      else if (cf.isMediumBrowser(opts) && !cf.isRetina(opts)){
+        newSrc = this.parentFolder + '/' + this.filename + mediumSuffix + '.' + this.extension;
+      }
+
+      // LARGE AND NOT 2x
+      else if (cf.isLargeBrowser(opts) && !cf.isRetina(opts)){
+        newSrc = this.parentFolder + '/' + this.filename + largeSuffix + '.' + this.extension;
+      }
+
+      // SMALL AND 2X
+      else if (cf.isSmallBrowser(opts) && cf.isRetina(opts)){
+        newSrc = this.parentFolder + '/' + this.filename + retinaSuffix + '.' + this.extension;
+      }
+      // MEDIUM BROWSERS AND 2X
+      else if (cf.isMediumBrowser(opts) && cf.isRetina(opts)){
+        newSrc = this.parentFolder + '/' + this.filename + mediumSuffix + retinaSuffix + '.' + this.extension;
+      }
+      // LARGE BROWSER AND IS X2
+      else if (cf.isLargeBrowser(opts) && cf.isRetina(opts)){
+        newSrc = this.parentFolder + '/' + this.filename + largeSuffix + retinaSuffix + '.' + this.extension;
+      }
+
+
+      return newSrc;
+    }
+
+  };
+
+
+  // Kick everything off by returning a new ImgList!
+  return new ImgList(opts);
+
+};
+
+
+// Export CommonJS module
+if (typeof exports !== 'undefined') {
+  if (typeof module !== 'undefined' && module.exports) {
+    exports = module.exports = cf;
+  }
+}
