@@ -3,37 +3,30 @@ permalink: /
 layout: index
 title: Homepage
 description: Page desc here
-case_studies:
-  - image_path: assets/img/portfolio/cs-tfc.jpg
-    label: THE FOOD CONCIERGE case study
-    case_study_link: ''
-  - image_path: assets/img/portfolio/cs-halo.jpg
-    label: HALO case study
-    case_study_link: LINK HERE
 snapshots:
-  - thumbnail_path: assets/img/portfolio/more/amiotek-mark.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/amiotek-mark.jpg
+  - thumbnail_path: assets/img/snapshots/amiotek-mark.jpg
+    fullsize_path: assets/img/snapshots/fullsize/amiotek-mark.jpg
     name: Amiotek Logotype
-  - thumbnail_path: assets/img/portfolio/more/avectous-concept.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/avectous-concept.jpg
+  - thumbnail_path: assets/img/snapshots/avectous-concept.jpg
+    fullsize_path: assets/img/snapshots/fullsize/avectous-concept.jpg
     name: Avectous Logo
-  - thumbnail_path: assets/img/portfolio/more/avectous-mark.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/avectous-mark.jpg
+  - thumbnail_path: assets/img/snapshots/avectous-mark.jpg
+    fullsize_path: assets/img/snapshots/fullsize/avectous-mark.jpg
     name: Avectous Mark
-  - thumbnail_path: assets/img/portfolio/more/avectous-mark.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/avectous-mark.jpg
+  - thumbnail_path: assets/img/snapshots/avectous-mark.jpg
+    fullsize_path: assets/img/snapshots/fullsize/avectous-mark.jpg
     name: Avectous Mark
-  - thumbnail_path: assets/img/portfolio/more/avectous-mark.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/avectous-mark.jpg
+  - thumbnail_path: assets/img/snapshots/avectous-mark.jpg
+    fullsize_path: assets/img/snapshots/fullsize/avectous-mark.jpg
     name: Avectous Mark
-  - thumbnail_path: assets/img/portfolio/more/amiotek-mark.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/amiotek-mark.jpg
+  - thumbnail_path: assets/img/snapshots/amiotek-mark.jpg
+    fullsize_path: assets/img/snapshots/fullsize/amiotek-mark.jpg
     name: Amiotek Logotype
-  - thumbnail_path: assets/img/portfolio/more/avectous-concept.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/avectous-concept.jpg
+  - thumbnail_path: assets/img/snapshots/avectous-concept.jpg
+    fullsize_path: assets/img/snapshots/fullsize/avectous-concept.jpg
     name: Avectous Logo
-  - thumbnail_path: assets/img/portfolio/more/avectous-mark.jpg
-    fullsize_path: assets/img/portfolio/more/fullsize/avectous-mark.jpg
+  - thumbnail_path: assets/img/snapshots/avectous-mark.jpg
+    fullsize_path: assets/img/snapshots/fullsize/avectous-mark.jpg
     name: Avectous Mark
 ---
 
@@ -74,7 +67,7 @@ snapshots:
     {% if casestudy.featured == false %}
       <a href="{{ casestudy.url }}" class="case-study">
 
-        <img class="case-study__image" src="{{ casestudy.thumbnail_path }}">
+        <img class="case-study__image cf-responsive" src="{{ casestudy.thumbnail_path }}">
 
         <div class="case-study__label">{{ casestudy.thumbnail_label}}</div>
       </a>
@@ -106,7 +99,7 @@ snapshots:
   {% for item in page.snapshots %}
   <a data-fullsize="{{item.fullsize_path}}" class="shapshots-grid__snapshot">
     <div class="shapshots-grid__snapshot__overflow">
-      <img src="{{item.thumbnail_path}}">
+      <img class="cf-responsive" src="{{item.thumbnail_path}}">
     </div>
   </a>
   {% endfor %}
