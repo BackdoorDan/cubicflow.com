@@ -120,6 +120,17 @@
 
     &__snapshot {
 
+      // Media Query for Snapshots
+      &--hide-on-med-only {
+        @include breakpoint(medium) {
+          display: none;
+        }
+
+        @include breakpoint(large) {
+          display: inline-block;
+        }
+      }
+
       @include grid-column(6, 4);
       margin-bottom: 4px;
 
