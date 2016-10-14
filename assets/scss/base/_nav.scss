@@ -16,11 +16,25 @@
       transition: color 0.3s;
 
       &.active {
-         color: $white;
+        color: $white;
+      }
+
+      &.active-mobile {
+        color: $cf-grey-xdark;
       }
 
       &:hover {
-         color: $cf-blue;
+        color: $cf-blue;
+      }
+
+      &.inactive {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+
+      &.inactive-mobile {
+        pointer-events: none;
+        opacity: 0.3;
       }
 
    }
@@ -42,6 +56,12 @@
       &__login {
          float: right;
          margin-top: 16px;
+         opacity: 0.7;
+         transition: all 0.2s;
+
+        &:hover{
+          opacity: 1.0;
+        }
       }
 
       &__links {

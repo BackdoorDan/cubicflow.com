@@ -63,4 +63,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit, arcu si
 
 <div style="color: #ffffff; margin-bottom: 20px;">Our team works with a wide variety of development technologies, with something suitable for almost every use case. Check out our case studies or visit our blog to read about some of our favorites.</div>
 
-<div class="button">Explore Portfolio</div>
+<a href="/" class="button">Explore Portfolio</a>

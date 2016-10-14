@@ -21,10 +21,11 @@
         <img class="nav__expanded__logo" src="/assets/img/cf-logo-dark.svg">
 
         <ul>
-          <li><a class="active" href="/">Our Work</a></li>
-          <li><a href="/services/">Services</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a {% if page.url == '/' %} class="active-mobile" {% endif %} href="/">Our Work</a></li>
+          <li><a {% if page.url == '/services/' %} class="active-mobile" {% endif %} href="/services/">Services</a></li>
+          <li><a {% if page.url == '/contact/' %} class="active-mobile" {% endif %} href="/contact/">Contact</a></li>
+          <li><a class="inactive-mobile" href="#">Blog</a></li>
+          <li><a href="http://www.cubicflow.com/ddash/">DDash Login</a></li>
         </ul>
       </div>
 
@@ -38,14 +39,14 @@
          </div>
 
          <div class="nav__default__login">
-            <img src="/assets/img/nav--icon--login.svg">
+            <a href="http://www.cubicflow.com/ddash/"><img src="/assets/img/nav--icon--login.svg"></a>
          </div>
 
          <ul class="nav__default__links">
             <li><a {% if page.url == '/' %} class="active" {% endif %} href="/">Our Work</a></li>
             <li><a {% if page.url == '/services/' %} class="active" {% endif %} href="/services/">Services</a></li>
             <li><a {% if page.url == '/contact/' %} class="active" {% endif %} href="/contact/">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a class="inactive" href="#">Blog</a></li>
          </ul>
 
       </div>

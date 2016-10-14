@@ -33,6 +33,14 @@
     &--left {
 
     }
+
+    a {
+      color: $cf-grey-light;
+
+      &:hover{
+        color: $cf-grey-xxlight;
+      }
+    }
   }
 
   h3 {
