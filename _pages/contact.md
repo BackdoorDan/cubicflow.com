@@ -11,11 +11,11 @@ description: Contact us at Cubicflow
 
 Got a project? Set up a free consultation meeting and get a price quote.
 
-Drop us a line at [hello@cubicflow.com](mailto: hello@cubicflow.com)
+Drop us a line at: &nbsp; <a class="contact" href="mailto:hello@cubicflow.com">hello@cubicflow.com</a>
 
-America: +1 562 285 3569
+America: &nbsp; <a class="contact" href="tel:+1-562-285-3569">+1 562 285 3569</a>
 
-Japan: +81 080 4050 3454
+Japan: &nbsp; <a class="contact" href="tel:+81-080-4050-3454">+81 080 4050 3454</a>
 
 <img src="/assets/img/calltoaction-icon.svg">
 

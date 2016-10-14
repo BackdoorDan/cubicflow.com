@@ -24,7 +24,19 @@ a {
   &.active {
     color: $white;
   }
+
+  &.contact{
+    color: $cf-grey-light;
+
+    &:hover {
+      color: $white;
+    }
+    &.active {
+      color: $white;
+    }
+  }
 }
+
 
 //////
 .contact {
