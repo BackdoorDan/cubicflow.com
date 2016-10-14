@@ -55,4 +55,4 @@ A flexible plan for web applications and large-scale sites.
 * Flexible meetings
 * Special arrangements for starting new production sprints
 * Cubicflow Content Management System
-* **Flexible Pricing**
+* **Flexible Pricing - [Contact Us](/contact)**

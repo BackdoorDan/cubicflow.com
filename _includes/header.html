@@ -21,9 +21,9 @@
         <img class="nav__expanded__logo" src="/assets/img/cf-logo-dark.svg">
 
         <ul>
-          <li class="active"><a href="#">Our Work</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="active" href="/">Our Work</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/contact/">Contact</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
       </div>
@@ -34,7 +34,7 @@
 
       <div class="nav__default">
          <div class="nav__default__logo">
-            <img src="/assets/img/cf-logo-light.svg">
+            <a href="/"><img src="/assets/img/cf-logo-light.svg"></a>
          </div>
 
          <div class="nav__default__login">
@@ -42,9 +42,9 @@
          </div>
 
          <ul class="nav__default__links">
-            <li><a href="#" class="active">Our Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a {% if page.url == '/' %} class="active" {% endif %} href="/">Our Work</a></li>
+            <li><a {% if page.url == '/services/' %} class="active" {% endif %} href="/services/">Services</a></li>
+            <li><a {% if page.url == '/contact/' %} class="active" {% endif %} href="/contact/">Contact</a></li>
             <li><a href="#">Blog</a></li>
          </ul>
 

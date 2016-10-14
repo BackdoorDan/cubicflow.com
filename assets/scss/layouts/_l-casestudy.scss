@@ -141,6 +141,10 @@
       display: block;
       margin: 0px auto;
     }
+
+    &__ksbadge {
+      margin-top: 80px;
+    }
   }
 
 
@@ -173,6 +177,11 @@
       height: 80px;
       border-radius: 40px;
       background-color: $cf-grey-medium;
+    }
+
+    &__masthead {
+      margin-top: 25px;
+      margin-bottom: 10px;
     }
   }
 
