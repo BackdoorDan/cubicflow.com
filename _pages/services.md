@@ -17,7 +17,7 @@ description: Web development and branding for design-driven customers
 
 ### Full Range Services
 
-Full-Stack Web and App development   •	  Marketing   •   Branding   •   iOS and cross-platform   • 	 Javascript   • 	 UI/UX   •  	Ecommerce   •  	CMS
+Full-Stack Development   •	  Branding   •   Marketing   •   iOS and cross-platform   • 	 Javascript   • 	 UI/UX   •  	Ecommerce   •  	CMS   •  	Print and Package   •  	and More
 
 ---
 
