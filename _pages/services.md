@@ -37,7 +37,7 @@ Our development process begins with an in-depth discovery process to identify pr
 
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit, arcu sit amet accumsan tincidunt, tellus augue volutpat neque, ut interdum purus mauris ut tortor.
+The first stage of our process begins with a thorough discovery period to identify objectives and challenges, to immerse ourselves in the brand and end user. By the end of this stage we will have a sharp focus and clearly defined spec.  
 
 <br><br>
 
@@ -45,7 +45,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit, arcu si
 
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit, arcu sit amet accumsan tincidunt, tellus augue volutpat neque, ut interdum purus mauris ut tortor.
+We then begin the '10x' process with the aim to explore as many related ideas as possible, test assumptions -- sometimes even rethink a concept entirely -- and focus those ideas into a Minimal Value Product (MVP).
 
 <br><br>
 
@@ -53,7 +53,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit, arcu si
 
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit, arcu sit amet accumsan tincidunt, tellus augue volutpat neque, ut interdum purus mauris ut tortor.
+Once we have the MVP...we develop, develop, develop! Quality control is an important and ongoing part of the process before we finally move to deploy.
 
 <br><br>
 
