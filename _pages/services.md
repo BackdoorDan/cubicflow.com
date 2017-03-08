@@ -15,13 +15,13 @@ description: Web development and branding for design-driven customers
 
 <img src="/assets/img/services/process--devices.svg">
 
-### Full Range Services
+### Cubicflow full-range services
 
-Full-Stack Development   •	  Branding   •   Marketing   •   iOS and cross-platform   • 	 Javascript   • 	 UI/UX   •  	Ecommerce   •  	CMS   •  	Print and Package   •  	and More
+Full-Stack Development   •	  Branding   •   Marketing   •   iOS and cross-platform   • 	 Javascript   • 	 UI/UX   •  	Ecommerce   •  	CMS   •  	Print and Package   •  	Graphic Design   •  	and More
 
 ---
 
-### The Cubicflow Process
+### Our development process
 
 <br>
 
@@ -29,7 +29,7 @@ Full-Stack Development   •	  Branding   •   Marketing   •   iOS and cross-
 
 <br>
 
-Our development process begins with an in-depth discovery process to identify problems and objectives. From there, we move to iterate through something called “10x,” before transitioning into full development mode.
+Cubicflow develops foremost using an Agile methodology. This approach allows us to respond to unpredictability through incremental, iterative work cadences and empirical feedback. Agile means you have an app running sooner, with regular new builds being delivered during the course of development.
 
 <br><br>
 
@@ -37,7 +37,7 @@ Our development process begins with an in-depth discovery process to identify pr
 
 <br>
 
-The first stage of our process begins with a thorough discovery period to identify objectives and challenges, to immerse ourselves in the brand and end user. By the end of this stage we will have a sharp focus and clearly defined spec.  
+Although the milestones are presented linearly, in the Agile process there is not necessarily a clear definition of where one milestone ends and another begins. Projects requiring a defined scope will usually begin with an in-depth discovery phase that helps us to identify problems and objectives early on in development. In addition discovery is a time for us to immerse ourselves in the brand and end user experience goals.  
 
 <br><br>
 
@@ -45,7 +45,7 @@ The first stage of our process begins with a thorough discovery period to identi
 
 <br>
 
-We then begin the '10x' process with the aim to explore as many related ideas as possible, test assumptions -- sometimes even rethink a concept entirely -- and focus those ideas into a Minimal Value Product (MVP).
+It is typical - especially early in the development process - to have a high level of iteration of ideas and concepts, before focusing in on a particular stack of solutions. We use this '10x' phase to explore an array of diverse ideas, perspectives, and design solutions. Honing and focusing in on the strongest solutions defines a Minimal Value Product for the project.
 
 <br><br>
 
@@ -53,7 +53,7 @@ We then begin the '10x' process with the aim to explore as many related ideas as
 
 <br>
 
-Once we have the MVP...we develop, develop, develop! Quality control is an important and ongoing part of the process before we finally move to deploy.
+In the last 'hump' of the development process, Quality control plays a continuous and important role, ultimately ramping up as preparations are made to deploy and go-live.
 
 <br><br>
 
