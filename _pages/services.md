@@ -9,7 +9,7 @@ description: Web development and branding for design-driven customers
 
 # Web development and branding for design-driven customers
 
-<h4 style="margin-top: -3.5em;">Cubicflow provides flexible, full-spectrum creative services under one roof</h4>
+<h4 style="margin-top: -3.5em;">Cubicflow provides flexible, full-spectrum creative services under one&nbsp;roof</h4>
 
 <br><br>
 
@@ -17,7 +17,7 @@ description: Web development and branding for design-driven customers
 
 ### Cubicflow full-range services
 
-Full-Stack Development   •	  Branding   •   Marketing   •   iOS and cross-platform   • 	 Javascript   • 	 UI/UX   •  	Ecommerce   •  	CMS   •  	Print and Package   •  	Graphic Design   •  	and More
+Full-Stack Development   •	  Branding   •   Marketing   •   iOS and cross-platform   • 	 Javascript   • 	 UI/UX   •  	Ecommerce   •  	CMS   •  	Print and Package   •  	Graphic Design   •  	and&nbsp;More
 
 ---
 
@@ -29,7 +29,7 @@ Full-Stack Development   •	  Branding   •   Marketing   •   iOS and cross-
 
 <br>
 
-Cubicflow develops foremost using an Agile methodology. This approach allows us to respond to unpredictability through incremental, iterative work cadences and empirical feedback. Agile means you have an app running sooner, with regular new builds being delivered during the course of development.
+Cubicflow develops foremost using an Agile methodology. This approach allows us to respond to unpredictability through incremental, iterative work cadences and empirical feedback. Agile means you have an app running sooner, with regular new builds being delivered during the&nbsp;course&nbsp;of&nbsp;development.
 
 <br><br>
 
@@ -37,7 +37,7 @@ Cubicflow develops foremost using an Agile methodology. This approach allows us 
 
 <br>
 
-Although the milestones are presented linearly, in the Agile process there is not necessarily a clear definition of where one milestone ends and another begins. Projects requiring a defined scope will usually begin with an in-depth discovery phase that helps us to identify problems and objectives early on in development. In addition discovery is a time for us to immerse ourselves in the brand and end user experience goals.  
+Although the milestones are presented linearly, in the Agile process there is not necessarily a clear definition of where one milestone ends and another begins. Projects requiring a defined scope will usually begin with an in-depth discovery phase that helps us to identify problems and objectives early on in development. In addition discovery is a time for us to immerse ourselves in the brand and end&nbsp;user&nbsp;experience&nbsp;goals.  
 
 <br><br>
 
@@ -45,7 +45,7 @@ Although the milestones are presented linearly, in the Agile process there is no
 
 <br>
 
-It is typical - especially early in the development process - to have a high level of iteration of ideas and concepts, before focusing in on a particular stack of solutions. We use this '10x' phase to explore an array of diverse ideas, perspectives, and design solutions. Honing and focusing in on the strongest solutions defines a Minimal Value Product for the project.
+It is typical - especially early in the development process - to have a high level of iteration of ideas and concepts, before focusing in on a particular stack of solutions. We use this '10x' phase to explore an array of diverse ideas, perspectives, and design solutions. Honing and focusing in on the strongest solutions defines a Minimal Value Product&nbsp;for&nbsp;the&nbsp;project.
 
 <br><br>
 
@@ -53,7 +53,7 @@ It is typical - especially early in the development process - to have a high lev
 
 <br>
 
-In the last 'hump' of the development process, Quality control plays a continuous and important role, ultimately ramping up as preparations are made to deploy and go-live.
+In the last 'hump' of the development process, Quality control plays a continuous and important role, ultimately ramping up as preparations are made to&nbsp;deploy&nbsp;and&nbsp;go-live.
 
 <br><br>
 
@@ -61,6 +61,6 @@ In the last 'hump' of the development process, Quality control plays a continuou
 
 <br><br>
 
-<div style="color: #ffffff; margin-bottom: 20px;">Our team works with a wide variety of development technologies, with something suitable for almost every use case. Check out our case studies or visit our blog to read about some of our favorites.</div>
+<div style="color: #ffffff; margin-bottom: 20px;">Our team works with a wide variety of development technologies, with something suitable for almost every use case. Check out our case studies or visit our blog to read about some&nbsp;of&nbsp;our&nbsp;favorites.</div>
 
 <a href="/" class="button">Explore Portfolio</a>
