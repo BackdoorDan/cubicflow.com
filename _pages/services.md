@@ -45,7 +45,7 @@ Although the milestones are presented linearly, in the Agile process there is no
 
 <br>
 
-It is typical - especially early in the development process - to have a high level of iteration of ideas and concepts, before focusing in on a particular stack of solutions. We use this '10x' phase to explore an array of diverse ideas, perspectives, and design solutions. Honing and focusing in on the strongest solutions defines a Minimal Value Product&nbsp;for&nbsp;the&nbsp;project.
+It is typical - especially early in the development process - to have a high level of iteration of ideas and concepts, before focusing in on a particular stack of solutions. We use this '10x' phase to explore an array of diverse ideas, perspectives, and design solutions. Honing and focusing in on the strongest solutions defines a Minimal Viable Product&nbsp;for&nbsp;the&nbsp;project.
 
 <br><br>
 
