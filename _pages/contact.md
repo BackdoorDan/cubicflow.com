@@ -9,7 +9,7 @@ description: Contact us at Cubicflow
 
 # Contact Us
 
-Got a project? Set up a free consultation meeting and get a&nbsp;price&nbsp;quote.
+Got a project? Set up a free consultation meeting and get&nbsp;an&nbsp;estimate.
 
 Drop us a line at: &nbsp; <a class="contact" href="mailto:hello@cubicflow.com">hello@cubicflow.com</a>
 
